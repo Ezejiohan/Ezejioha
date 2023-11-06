@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "firstname": "David",
+        "lastname": "Greenstone",
+        "isAdmin": true
+        
+    },
+    {
+        "id": 2,
+        "firstname": "Jude",
+        "lastname": "Dennis",
+        "isAdmin":false
+
+    },
+    {
+        "id": 3,
+        "firstname": "Saka",
+        "lastname": "Toneli",
+        "isAdmin": true
+    }
+]
