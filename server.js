@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -7,8 +8,13 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
-const credentials = require('./middleware/credntials');
+const credentials = require('../My school app/middleware/credentials');
+const mongoose = require('mongoose');
+const connectDB = require('./config/dbConn');
 const PORT = process.env.PORT || 5000;
+
+// connect to mongoDB
+// connectDB();
 
 // custom middleware logger
 app.use(logger);
@@ -101,7 +107,18 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
+// const url = "mongodb+srv://Ezejiohan:Passenger24@cluster0.yqqou7r.mongodb.net/MySchoolAppDB?"
+const url = "mongodb+srv://Ezejiohan:Passenger24@cluster0.yqqou7r.mongodb.net/"
 
+mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
+    console.log('Connected to MongoDB');
+    app.listen(PORT, () => console.log(`server started on port ${PORT}`));
+}).catch((err)=>{
+    console.log("the error:",err)
+})
 
-app.listen(PORT, () => console.log(`server started on port ${PORT}`));
+// mongoose.connection.once('open', () => {
+//     console.log('Connected to MongoDB');
+//     app.listen(PORT, () => console.log(`server started on port ${PORT}`));
+// });
 

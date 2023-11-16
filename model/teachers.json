@@ -3,20 +3,23 @@
         "id": 1,
         "firstname": "David",
         "lastname": "Greenstone",
-        "isAdmin": true
+        "isAdmin": true,
+        "isTeacher": false
         
     },
     {
         "id": 2,
         "firstname": "Jude",
         "lastname": "Dennis",
-        "isAdmin":false
+        "isAdmin":false,
+        "isTeacher": true
 
     },
     {
         "id": 3,
         "firstname": "Saka",
         "lastname": "Toneli",
-        "isAdmin": true
+        "isAdmin": true,
+        "isTeacher": false
     }
 ]

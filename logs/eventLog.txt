@@ -25,3 +25,9 @@
 20231018	18:29:00	6cc07c64-9cf2-4af0-bbc6-2f0bb3b7fabe	GET	undefined	/employees
 20231018	18:29:37	884e038a-45e0-4fea-b2a5-1d9aff0a026b	POST	undefined	/employees
 20231018	18:30:03	c6d22d3f-b836-4988-9751-ff50000611ce	POST	undefined	/employees
+20231115	15:55:51	8c529542-c576-4fd9-9af2-960d214c009b	ReferenceError: whitelist is not defined
+20231115	15:55:50	75eacbf4-63f0-491f-af4e-310e08ef1e6f	GET	undefined	/api/members/1
+20231115	15:56:55	855caa44-0fbc-4994-a8d7-43fecf9e7852	POST	undefined	/register
+20231115	15:56:55	c89a3126-51bd-47e6-8f0c-68d40f1963ef	ReferenceError: whitelist is not defined
+20231115	16:04:54	10398fe5-6577-4d33-8596-d2cfc7397ea1	POST	undefined	/register
+20231115	16:04:55	ae9ef412-b7c1-4f93-90a4-30146e49007b	ReferenceError: whitelist is not defined
